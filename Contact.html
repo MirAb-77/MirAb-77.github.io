@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-custom {
+            background-color: #0b0b0b; /* Dark background */
+        }
+
+        .text-custom {
+            color: #00ff7f; /* Lime green text */
+        }
+
+        .hover-bg {
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-bg:hover {
+            background-color: #3d9970; /* Darker green on hover */
+        }
+
+        .separator {
+            border-color: #00ff7f; /* Lime green line */
+        }
+
+        /* Active Link Styling */
+        .active-link {
+            color: #00ff7f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="bg-custom text-white">
+    <header class="bg-custom text-white py-4 shadow">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center justify-center mt-8">
+                <div class="text-3xl font-bold text-custom px-6 py-3 rounded-full border-2 border-green-500">
+                    AIM
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-xl">
+                    <li><a href="Home.html" class="hover:text-custom">Home</a></li>
+                    <li><a href="About.html" class="hover:text-customk">About</a></li>
+                    <li><a href="Resume.html" class="hover:text-custom">Resume</a></li>
+                    <li><a href="Services.html" class="hover:text-custom">Services</a></li>
+                    <li><a href="Portfolio.html" class="hover:text-custom">Portfolio</a></li>
+                    <li><a href="Contact.html" class="hover:text-custom active-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main class="text-center py-12">
+    <h2 class="text-5xl  text-custom font-bold">Get in Touch</h2>
+    <div class="mt-6 p-4 bg-gray-800 rounded-lg"> <!-- Grey background for the quote -->
+        <blockquote class="text-xl italic text-gray-300">“Communication is the key to understanding, and I'am here to bridge the gap.”</blockquote>
+    </div>
+    <p class="mt-4 max-w-2xl mx-auto">Feel free to reach out through any of the following channels:</p>
+</main>
+
+    
+    <section class="bg-black py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-12 mb-12">
+                <div class="contact-info text-center">
+                    <i class="fas fa-map-marker-alt  text-custom text-5xl mb-2"></i>
+                   <p class="mt-2 text-lg">Address</p> <!-- Increased font size -->
+                    <p>Karim Park, Lahore, Pakistan</p>
+                </div>
+                <div class="contact-info text-center">
+                    <i class="fas fa-phone-alt text-custom text-5xl mb-2"></i>
+                   <p class="mt-2 text-lg">Phone</p> <!-- Increased font size -->
+                    <p>+92 316 400 9363</p>
+                </div>
+                <div class="contact-info text-center">
+                    <i class="fas fa-envelope text-custom text-5xl mb-2"></i>
+                   <p class="mt-2 text-lg">Email</p> <!-- Increased font size -->
+                    <p>mir.abdullah.701@gmail.com</p>
+                </div>
+              <div class="contact-info text-center">
+    <i class="fab fa-linkedin-in text-custom text-5xl mb-2"></i> <!-- LinkedIn icon -->
+    <p class="mt-2 text-lg">LinkedIn</p> <!-- Increased font size -->
+    <p><a href="https://www.linkedin.com/in/abdullah-mir-211658230/" class="hover:text-custom">Abdullah Mir</a></p>
+</div>
+            </div>
+            <form class="max-w-4xl mx-auto">
+                <div class="flex space-x-6 mb-6">
+                    <input type="text" placeholder="Your Name" class="w-1/2 p-4 bg-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <input type="email" placeholder="Your Email" class="w-1/2 p-4 bg-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <input type="text" placeholder="Subject" class="w-full p-4 mb-6 bg-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                <textarea placeholder="Message" class="w-full p-4 mb-6 bg-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 h-40"></textarea>
+                <button type="submit" class="px-6 py-3 bg-green-500 text-black font-bold hover:bg-green-600 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="bg-black py-12 text-center">
+              <h2 class="text-4xl text-custom font-bold">Contact Me!</h2>
+           <p class="mt-6 max-w-3xl mx-auto">I value your feedback! Share your experiences, suggestions, or inquiries to help me improve my services. Together, we can make a difference!
+!</p>
+       <div class="footer-icons mt-6 text-3xl"> <!-- Added text-3xl for larger icons -->
+    <a href="https://www.linkedin.com/in/abdullah-mir-211658230/" class="hover:text-custom"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" class="hover:text-custom"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="hover:text-custom"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="hover:text-custom"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="hover:text-custom"><i class="fab fa-github"></i></a>
+</div>
+
+
+        <p class="mt-6">Copyright <strong>Personal</strong>. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

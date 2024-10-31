@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-custom {
+            background-color: #0b0b0b; /* Dark background */
+        }
+
+        .text-custom {
+            color: #00ff7f; /* Lime green text */
+        }
+
+        .hover-bg {
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-bg:hover {
+            background-color: #3d9970; /* Darker green on hover */
+        }
+
+        .separator {
+            border-color: #00ff7f; /* Lime green line */
+        }
+
+        /* Active Link Styling */
+        .active-link {
+            color: #00ff7f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="bg-custom text-white">
+    <header class="bg-custom text-white py-4 shadow">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center justify-center mt-8">
+                <div class="text-3xl font-bold text-custom px-6 py-3 rounded-full border-2 border-green-500">
+                    AIM
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-xl">
+                    <li><a href="Home.html" class="hover:text-custom">Home</a></li>
+                    <li><a href="About.html" class="hover:text-custom">About</a></li>
+                    <li><a href="Resume.html" class="hover:text-custom active-link">Resume</a></li>
+                    <li><a href="Services.html" class="hover:text-custom">Services</a></li>
+                    <li><a href="Portfolio.html" class="hover:text-custom">Portfolio</a></li>
+                    <li><a href="Contact.html" class="hover:text-custom">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4">Resume</h1>
+            <p class="text-gray-400 italic text-xl">"Strive not to be a success, but rather to be of value." - Albert Einstein</p>
+        </section>
+        
+        <section class="flex justify-center mb-8">
+            <a href="#" class="text-gray-400 hover:text-green-500">Home</a>
+            <span class="mx-2 text-gray-400">/</span>
+            <span class="text-green-500">Resume</span>
+        </section>
+        
+
+<!-- Languages Section -->
+<section class="mb-12 p-6 rounded-lg mt-6 bg-gray-1000 text-white shadow-xl">
+     <h2 class="text-4xl font-bold text-center section-title mb-4" style="color: white;">Coding Languages</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Python -->
+        <div class="p-6 bg-gray-900 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-green-400">Python</h3>
+            <div class="relative w-full h-4 bg-gray-700 rounded">
+                <div class="absolute left-0 h-full bg-green-400" style="width: 90%; border-radius: 5px;"></div>
+            </div>
+            <p class="text-gray-300 mt-2">Expert</p>
+        </div>
+
+        <!-- C++ -->
+        <div class="p-6 bg-gray-900 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-green-400">C++</h3>
+            <div class="relative w-full h-4 bg-gray-700 rounded">
+                <div class="absolute left-0 h-full bg-green-400" style="width: 60%; border-radius: 5px;"></div>
+            </div>
+            <p class="text-gray-300 mt-2">Intermediate</p>
+        </div>
+
+        <!-- HTML/CSS -->
+        <div class="p-6 bg-gray-900 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-green-400">HTML/CSS</h3>
+            <div class="relative w-full h-4 bg-gray-700 rounded">
+                <div class="absolute left-0 h-full bg-green-400" style="width: 70%; border-radius: 5px;"></div>
+            </div>
+            <p class="text-gray-300 mt-2">Intermediate</p>
+        </div>
+
+        <!-- R -->
+        <div class="p-6 bg-gray-900 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-green-400">R</h3>
+            <div class="relative w-full h-4 bg-gray-700 rounded">
+                <div class="absolute left-0 h-full bg-green-400" style="width: 40%; border-radius: 5px;"></div>
+            </div>
+            <p class="text-gray-300 mt-2">Beginner</p>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="p-6 bg-gray-900 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-green-400">Tailwind CSS</h3>
+            <div class="relative w-full h-4 bg-gray-700 rounded">
+                <div class="absolute left-0 h-full bg-green-400" style="width: 65%; border-radius: 5px;"></div>
+            </div>
+            <p class="text-gray-300 mt-2">Intermediate</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Summary Section -->
+<section class="mb-12 p-6 rounded-lg mt-6 bg-black text-white shadow-lg">
+ <h2 class="text-4xl font-bold text-center section-title mb-4" style="color: white;">Skills Summary</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Data Science -->
+        <div class="p-5 bg-gray-900 rounded-lg shadow-lg skill-card">
+            <h3 class="text-2xl font-semibold text-green-400">Data Science</h3>
+            <div class="skill-bar" style="width: 80%;">
+                <span>Expert</span>
+            </div>
+        </div>
+
+        <!-- Data Visualization -->
+        <div class="p-5 bg-gray-900 rounded-lg shadow-lg skill-card">
+            <h3 class="text-2xl font-semibold text-green-400">Data Visualization</h3>
+            <div class="skill-bar" style="width: 70%;">
+                <span>Intermediate</span>
+            </div>
+        </div>
+
+        <!-- Database Management -->
+        <div class="p-5 bg-gray-900 rounded-lg shadow-lg skill-card">
+            <h3 class="text-2xl font-semibold text-green-400">Database Management</h3>
+            <div class="skill-bar" style="width: 75%;">
+                <span>Intermediate</span>
+            </div>
+        </div>
+
+        <!-- Machine Learning Frameworks -->
+        <div class="p-5 bg-gray-900 rounded-lg shadow-lg skill-card">
+            <h3 class="text-2xl font-semibold text-green-400">Machine Learning Frameworks</h3>
+            <div class="skill-bar" style="width: 85%;">
+                <span>Expert</span>
+            </div>
+        </div>
+
+        <!-- Web Development Skills -->
+        <div class="p-5 bg-gray-900 rounded-lg shadow-lg skill-card">
+            <h3 class="text-2xl font-semibold text-green-400">Web Development Skills</h3>
+            <div class="skill-bar" style="width: 65%;">
+                <span>Intermediate</span>
+            </div>
+        </div>
+
+       <!-- Dashboard Development -->
+        <div class="p-5 bg-gray-900 rounded-lg shadow-lg skill-card">
+            <h3 class="text-2xl font-semibold text-green-400">Dashboard Development</h3>
+            <div class="skill-bar" style="width: 80%;">
+                <span>Expert</span>
+            </div>
+        </div>
+
+        <!-- Analytical Skills -->
+        <div class="p-5 bg-gray-900 rounded-lg shadow-lg skill-card">
+            <h3 class="text-2xl font-semibold text-green-400">Analytical Skills</h3>
+            <div class="skill-bar" style="width: 90%;">
+                <span>Intermediate</span>
+            </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="p-5 bg-gray-900 rounded-lg shadow-lg skill-card">
+            <h3 class="text-2xl font-semibold text-green-400">Other Skills</h3>
+            <div class="skill-bar" style="width: 55%;">
+                <span>Beginner</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Style adjustments for skill cards and bars */
+    .skill-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .skill-bar {
+        height: 12px; /* Increased height for better visibility */
+        background: linear-gradient(145deg, #4caf50, #388e3c);
+        border-radius: 20px; /* Rounded edges for a smoother look */
+        position: relative;
+        transition: width 0.4s ease;
+        margin-top: 15px; /* Added space above the bar */
+    }
+
+    .skill-bar span {
+        position: absolute;
+        right: 10px;
+        top: -20px; /* Increased top position for more spacing */
+        font-size: 14px;
+        color: #e0e0e0;
+        font-weight: bold;
+    }
+
+    /* Adding some dynamic hover effects */
+    .skill-card:hover .skill-bar {
+        transform: scaleY(1.1);
+    }
+
+    /* Responsive Design Adjustments */
+    @media (max-width: 768px) {
+        .skill-card {
+            margin-bottom: 20px; /* Space between cards on smaller screens */
+        }
+    }
+</style>
+
+
+
+<!-- Specializations Section -->
+        <section class="mb-12 bg-black p-5 rounded-lg mt-6">
+              <h2 class="text-4xl font-bold text-center section-title mb-4" style="color: white;">Specializations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/AHXDDVNX377J" class="specialization-card transition-transform transform hover:scale-105">
+                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-green-500">IBM Data Science Professional Certificate</h3>
+                        <p class="text-gray-400 mt-2">Master data science fundamentals and analytics techniques.</p>
+                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    </div>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/8Q6TTQQEX8CS" class="specialization-card transition-transform transform hover:scale-105">
+                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-green-500">Microsoft Power BI Professional Certificate</h3>
+                        <p class="text-gray-400 mt-2">Gain expertise in data visualization and analytics.</p>
+                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    </div>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/4XRU0DFLRNSK" class="specialization-card transition-transform transform hover:scale-105">
+                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-green-500">Google Data Analytics Professional Certificate</h3>
+                        <p class="text-gray-400 mt-2">Explore data-driven decision-making strategies.</p>
+                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    </div>
+                </a>
+                <a href="https://www.datacamp.com/portfolio/abdullahimran017" class="specialization-card transition-transform transform hover:scale-105">
+                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-green-500">DataCamp Certified Professional Data Scientist</h3>
+                        <p class="text-gray-400 mt-2">Acquire essential skills for real-world data science projects.</p>
+                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    </div>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/HE0UF78E67BF" class="specialization-card transition-transform transform hover:scale-105">
+                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-green-500">Google Advanced Data Analytics Certificate</h3>
+                        <p class="text-gray-400 mt-2">Deepen your analytics skills for advanced insights.</p>
+                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+<!-- Sessions/Competitions Section -->
+<section class="container mx-auto px-4 mb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Competitions Section -->
+        <div class="bg-gray-900 rounded-lg shadow-lg p-6">
+            <h2 class="text-4xl font-bold text-center section-title text-white mb-4">Competitions</h2>
+            <div class="timeline-item mb-6">
+                <h3 class="text-lg font-semibold highlight text-white">IT Club Coding Competition</h3>
+                <p class="text-gray-400">Achieved a score of 47/50 | Organized by CosmiCode</p>
+                <p class="text-gray-400">This competition tested participants' coding skills across various challenges, focusing on algorithms and data structures.</p>
+            </div>
+            <div class="timeline-item mb-6">
+                <h3 class="text-lg font-semibold highlight text-white">CosmiCode Coding Competition</h3>
+                <p class="text-gray-400">Scored 55/60 | Held Online</p>
+                <p class="text-gray-400">An engaging online event that challenged contestants with real-world problem-solving tasks in a timed environment.</p>
+            </div>
+            <div class="timeline-item mb-6">
+                <h3 class="text-lg font-semibold highlight text-white">Python Frenzy Competition</h3>
+                <p class="text-gray-400">Recognized as a Top Performer | Organized by CosmiCode</p>
+                <p class="text-gray-400">Participants demonstrated their Python programming prowess through various coding tasks, showcasing creativity and efficiency.</p>
+            </div>
+        </div>
+
+        <!-- Internships Section -->
+        <div class="bg-gray-900 rounded-lg shadow-lg p-6">
+            <h2 class="text-4xl font-bold text-center section-title text-white mb-4">Internships</h2>
+            <div class="timeline-item mb-6">
+                <h3 class="text-lg font-semibold highlight text-white">CosmiCode</h3>
+                <p class="text-gray-400">Machine Learning Intern</p>
+                <ul class="list-disc list-inside mt-2 text-gray-300">
+                    <li>Gained in-depth knowledge of machine learning and deep learning techniques.</li>
+                    <li>Developed various deep learning projects and successfully completed weekly tasks.</li>
+                </ul>
+            </div>
+            <div class="timeline-item mb-6">
+                <h3 class="text-lg font-semibold highlight text-green-400">ACM Uet X Devsinc AI/ML Fellowship</h3>
+                <p class="text-gray-400">AI/ML Fellow</p>
+                <ul class="list-disc list-inside mt-2 text-gray-300">
+                    <li>Engaged in a comprehensive 3-month fellowship focusing on machine learning and deep learning.</li>
+                    <li>Collaborated with UET ACM Lahore and Devsinc Lahore, gaining valuable insights and hands-on experience.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container {
+        max-width: 1300px; /* Center the container with a maximum width */
+    }
+    .section-title {
+        letter-spacing: 1.3px;
+    }
+    .highlight {
+        color: #6ee7b7; /* Use a slightly brighter color for highlights */
+    }
+</style>
+
+<!-- Courses Section -->
+   <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+    <div>
+       <h2 class="text-4xl font-bold text-center section-title mb-4" style="color: white;">Courses</h2>
+
+        <!-- Data Science Courses Container -->
+<div class="course-container mb-6 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
+
+        <h3 class="text-lg font-bold highlight text-green-400">Data Science</h3>
+            
+            <!-- Coursera Courses -->
+            <div class="mt-4">
+                <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                    <li>Data Analysis with R Programming</li>
+                    <li>Nuts & Bolts of Machine Learning</li>
+                    <li>Foundations of Data Science</li>
+                    <li>Google Data Analytics Capstone</li>
+                    <li>Introduction to Python</li>
+                    <li>Introduction to SQL</li>
+                    <li>Intermediate SQL</li>
+                    <li>Intermediate Python</li>
+                    <li>Supervised Learning with Scikit-learn</li>
+                    <li>Machine Learning with Tree-Based Models</li>
+                    <li>End-to-End Machine Learning</li>
+                    <li>Machine Learning for Business</li>
+                    <li>Extreme Gradient Boosting with XGBoost</li>
+                    <li>Machine Learning for Time Series Data/li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Analysis Courses Container -->
+        <div class="course-container mb-6 p-6 border border-gray-900 rounded-lg shadow-lg bg-gray-900 text-white">
+            <h3 class="text-lg font-bold highlight text-green-400">Data Analysis</h3>
+            
+            <!-- Coursera Courses -->
+            <div class="mt-4">
+                <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                    <li>Analyze Data to Answer Questions</li>
+                    <li>Share Data Through the Art of Visualization</li>
+                    <li>Process Data from Dirty to Clean</li>
+                    <li>Ask Questions to Make Data-Driven Decisions</li>
+                    <li>Prepare Data for Exploration</li>
+                    <li>Applied Data Science Capstone</li>
+                </ul>
+            </div>
+
+            <!-- DataCamp Courses -->
+            <div class="mt-4">
+                <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                    <li>Data Manipulation with Pandas</li>
+                    <li>Cluster Analysis in Python</li>
+                    <li>Dimensionality Reduction in Python</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <!-- MLOps and Advanced Topics Container -->
+         <div class="course-container mb-6 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
+            <h3 class="text-lg font-bold highlight text-green-400">MLOps and Advanced Topics</h3>
+            
+            <div class="mt-4">
+                <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                    <li>MLOps Concepts</li>
+                    <li>Preprocessing for Machine Learning in Python</li>
+                    <li>Intermediate Importing Data in Python</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project Management Courses Container -->
+         <div class="course-container mb-6 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
+            <h3 class="text-lg font-bold highlight text-green-400">Project Management</h3>
+            <div class="mt-4">
+                <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                    <li>Foundations of Project Management</li>
+                    <li>Project Initiation: Starting a Successful Project</li>
+                </ul>
+            </div>
+        </div>
+
+         <!-- Power BI Courses Container -->
+        <div class="course-container mb-6 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
+         <h3 class="text-lg font-bold highlight text-green-400">Power BI</h3>
+            <div class="mt-4">
+                <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                    <li>Harnessing the Power of Data with Power BI - Microsoft</li>
+                    <li>Preparing Data for Analysis with Microsoft Excel - Microsoft</li>
+                    <li>Introduction to Git - DataCamp</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-black py-12 text-center">
+    <h2 class="text-3xl font-bold">Abdullah Mir</h2>
+ <p class="text-lg text-gray-400">
+    As a data enthusiast, I bridge the gap between data and decision-making. 
+</p>
+
+    <div class="flex justify-center space-x-8 mt-6">
+        <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="text-gray-400 mt-6">Copyright Personal All Rights Reserved</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-custom {
+            background-color: #0b0b0b; /* Dark background */
+        }
+
+        .text-custom {
+            color: #00ff7f; /* Lime green text */
+        }
+
+        .hover-bg {
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-bg:hover {
+            background-color: #3d9970; /* Darker green on hover */
+        }
+
+        .separator {
+            border-color: #00ff7f; /* Lime green line */
+        }
+
+        /* Active Link Styling */
+        .active-link {
+            color: #00ff7f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="bg-custom text-white">
+    <header class="bg-custom text-white py-4 shadow">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center justify-center mt-8">
+                <div class="text-3xl font-bold text-custom px-6 py-3 rounded-full border-2 border-green-500">
+                    AIM
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-xl">
+                    <li><a href="Home.html" class="hover:text-custom">Home</a></li>
+                    <li><a href="About.html" class="hover:text-custom">About</a></li>
+                    <li><a href="Resume.html" class="hover:text-custom">Resume</a></li>
+                    <li><a href="Services.html" class="hover:text-custom active-link">Services</a></li>
+                    <li><a href="Portfolio.html" class="hover:text-custom">Portfolio</a></li>
+                    <li><a href="Contact.html" class="hover:text-custom">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="text-center py-16 bg-black rounded-lg shadow-lg">
+    <h1 class="text-4xl font-bold text-white mb-4">My Services</h1>
+    <blockquote class="mt-8 text-xl italic text-gray-300 border-l-4 border-gray-600 pl-6 max-w-4xl mx-auto bg-gray-900 p-4 rounded-lg shadow-md">
+    "Data is the new oil, and I’m here to help you refine it into valuable insights."
+    <cite class="block mt-4 text-xl font-semibold text-gray-300">— Abdullah Imran</cite>
+</blockquote>
+
+<style>
+    /* Additional styles for the blockquote */
+    blockquote {
+        background-color: rgba(255, 255, 255, 0.1); /* Light background for quote */
+        padding: 1rem; /* Padding for quote */
+        border-radius: 8px; /* Rounded corners for the quote box */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    }
+</style>
+
+</main>
+
+<style>
+    /* Additional styles for the main section */
+    .main-section {
+        background-color: #1f2937; /* Dark background for contrast */
+        border-radius: 10px; /* Rounded corners for a sleek look */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    }
+</style>
+
+
+   <div class="bg-black py-2">
+    <div class="container mx-auto px-4">
+        <a href="#" class="text-green-500 text-lg">Home</a> / <span class="text-white text-lg">Services</span>
+    </div>
+</div>
+
+    <section class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-8 text-center rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <div class="text-green-500 text-5xl mb-4"><i class="fas fa-chart-line"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Dashboard Development</h2>
+            <p class="text-gray-400">I design interactive, real-time dashboards for comprehensive insights into business metrics and performance.</p>
+        </div>
+        <div class="bg-gray-900 p-8 text-center rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <div class="text-green-500 text-5xl mb-4"><i class="fas fa-brain"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Deep Learning Model Development</h2>
+            <p class="text-gray-400">Harness the power of neural networks with customized deep learning models tailored for complex tasks.</p>
+        </div>
+        <div class="bg-gray-900 p-8 text-center rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <div class="text-green-500 text-5xl mb-4"><i class="fas fa-robot"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Machine Learning Model Development</h2>
+            <p class="text-gray-400">From data preprocessing to model deployment, I develop ML models to solve a wide range of business problems.</p>
+        </div>
+        <div class="bg-gray-900 p-8 text-center rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <div class="text-green-500 text-5xl mb-4"><i class="fas fa-laptop-code"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Web Development</h2>
+            <p class="text-gray-400">Creating stunning and responsive websites to enhance user engagement and drive digital growth.</p>
+        </div>
+        <div class="bg-gray-900 p-8 text-center rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <div class="text-green-500 text-5xl mb-4"><i class="fas fa-chart-pie"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Data Analysis & Insights</h2>
+            <p class="text-gray-400">Utilizing data analytics to uncover actionable insights and inform data-driven decisions.</p>
+        </div>
+        <div class="bg-gray-900 p-8 text-center rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <div class="text-green-500 text-5xl mb-4"><i class="fas fa-database"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Data Scientist Services</h2>
+            <p class="text-gray-400">Providing expert analysis, modeling, and interpretation to help organizations leverage data effectively.</p>
+        </div>
+        <div class="bg-gray-900 p-8 text-center rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <div class="text-green-500 text-5xl mb-4"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Tutoring Lessons</h2>
+            <p class="text-gray-400">Offering personalized tutoring lessons in data science and machine learning to help you master the concepts.</p>
+        </div>
+        <div class="bg-gray-900 p-8 text-center rounded-lg shadow-lg transition-transform transform hover:scale-105 group">
+    <div class="text-green-500 text-5xl mb-4 transition-transform transform group-hover:scale-110">
+        <i class="fas fa-signal"></i>
+    </div>
+    <h2 class="text-2xl font-bold mb-2 transition duration-300 ease-in-out hover:text-green-300">Predictive Analytics</h2>
+    <p class="text-gray-400">Utilizing statistical algorithms and machine learning techniques to identify the likelihood of future outcomes based on historical data.</p>
+</div>
+    </section>
+
+    <footer class="bg-black py-12 text-center">
+        <h2 class="text-3xl font-bold">Abdullah Mir</h2>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">Dedicated to providing clients with tailored, data-driven solutions that transform insights into impactful strategies for growth and success.</p>
+
+        <div class="flex justify-center space-x-8 mt-6">
+            <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-green-500 hover:text-white transition"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="text-gray-400 mt-6">Copyright Personal All Rights Reserved</p>
+    </footer>
+</body>
+</html>
