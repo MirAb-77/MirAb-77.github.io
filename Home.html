@@ -11,10 +11,15 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            background-image: url('https://i.imgur.com/Mtzf7Sr.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
         }
 
         .bg-custom {
-            background-color: #0b0b0b; /* Dark background */
+            background-color: #000000; /* Dark background */
         }
 
         .text-custom {
@@ -41,7 +46,7 @@
     </style>
 </head>
 
-<body class="bg-custom text-white">
+<body>
     <header class="bg-custom text-white py-4 shadow">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center justify-center mt-8">
@@ -62,7 +67,7 @@
         </div>
     </header>
 
-    <main class="flex items-center justify-center h-screen bg-cover bg-center" style="background-image: url('ml_background.jpg');">
+    <main class="flex items-center justify-center h-screen">
         <div class="text-center bg-black bg-opacity-50 p-10 rounded-lg shadow-lg">
             <h1 class="text-7xl font-bold mb-4">Abdullah Mir</h1>
             <div class="relative inline-block">
@@ -72,20 +77,10 @@
                 <p class="text-3xl mt-2 opacity-0 transition-opacity duration-500" id="ml-engineer">
                     I'm a <span class="text-green-500">Machine Learning Engineer</span>
                 </p>
-               <blockquote class="mt-8 text-xl italic text-gray-200 border-l-4 border-gray-600 pl-6 max-w-4xl mx-auto bg-gray-900 p-4 rounded-lg shadow-md">
-    "Data is a canvas, and together we can paint a masterpiece of insights that drive success."
-    <cite class="block mt-4 text-lg font-semibold text-gray-300">— Abdullah Mir</cite>
-</blockquote>
-
-<style>
-    /* Additional styles for the blockquote */
-    blockquote {
-        background-color: rgba(255, 255, 255, 0.1); /* Light background for quote */
-        padding: 1rem; /* Padding for quote */
-        border-radius: 8px; /* Rounded corners for the quote box */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
-    }
-</style>
+                <blockquote class="mt-8 text-xl italic text-gray-200 border-l-4 border-gray-600 pl-6 max-w-4xl mx-auto bg-gray-900 p-4 rounded-lg shadow-md">
+                    "Data is a canvas, and together we can paint a masterpiece of insights that drive success."
+                    <cite class="block mt-4 text-lg font-semibold text-gray-300">— Abdullah Mir</cite>
+                </blockquote>
             </div>
             <div class="flex justify-center space-x-6 mt-6">
                 <a href="#" class="text-4xl hover:text-green-500 social-icon"><i class="fab fa-facebook"></i></a>
@@ -97,40 +92,6 @@
         </div>
     </main>
 
-    <script>
-        // Function to handle title transition
-        function transitionTitles() {
-            const role = document.getElementById("role");
-            const mlEngineer = document.getElementById("ml-engineer");
-
-            // Fade out the current title
-            role.style.opacity = '0';
-
-            // Wait for the fade out to complete
-            setTimeout(() => {
-                // Switch display styles
-                role.style.display = 'none';
-                mlEngineer.style.display = 'inline'; // Ensure it can be seen
-                mlEngineer.style.opacity = '1'; // Start with opacity 1 for the new title
-            }, 500); // Match this with the duration of the fade out
-
-            // Wait a little longer before switching back to Data Scientist for a loop
-            setTimeout(() => {
-                mlEngineer.style.opacity = '0'; // Fade out the ML Engineer title
-                setTimeout(() => {
-                    mlEngineer.style.display = 'none'; // Hide it after fading out
-                    role.style.display = 'inline'; // Show the Data Scientist title again
-                    role.style.opacity = '1'; // Fade back in
-                }, 500); // Match this with the duration of the fade out
-            }, 3000); // Duration before switching to Machine Learning Engineer
-        }
-
-        // Start the transition
-        transitionTitles();
-        // Repeat the transition every 4 seconds (3000ms fade in + 500ms fade out)
-        setInterval(transitionTitles, 10000);
-    </script>
-
     <footer class="bg-black py-8">
         <div class="container mx-auto text-center">
             <p class="mt-2 italic text-lg">"Pain is love; it leads to great work and growth."</p>
@@ -138,4 +99,5 @@
         </div>
     </footer>
 </body>
+
 </html>
