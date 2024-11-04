@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,6 +42,39 @@
             color: #00ff7f;
             font-weight: bold;
         }
+
+        /* Keyframes for text transition */
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-out {
+            animation: fadeInOut 2.5s infinite;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #00ff7f;
+            color: black;
+            font-weight: bold;
+            border-radius: 9999px; /* Fully rounded */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0.5rem;
+        }
+
+        .button:hover {
+            background-color: #3d9970;
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 
@@ -71,12 +103,19 @@
         <div class="text-center bg-black bg-opacity-50 p-10 rounded-lg shadow-lg">
             <h1 class="text-7xl font-bold mb-4">Abdullah Mir</h1>
             <div class="relative inline-block">
-                <p class="text-3xl mt-2 transition-opacity duration-500" id="role">
+                <p class="text-3xl mt-2 transition-opacity duration-500 fade-in-out" id="role">
                     I'm a <span class="text-green-500">Data Scientist</span>
                 </p>
-                <p class="text-3xl mt-2 opacity-0 transition-opacity duration-500" id="ml-engineer">
+                <p class="text-3xl mt-2 transition-opacity duration-500 fade-in-out hidden" id="ml-engineer">
                     I'm a <span class="text-green-500">Machine Learning Engineer</span>
                 </p>
+                <p class="text-3xl mt-2 transition-opacity duration-500 fade-in-out hidden" id="helper">
+                    I'm your <span class="text-green-500">Helper</span>
+                </p>
+                <div class="mt-6">
+                    <button onclick="window.location.href='mailto:mir.abdullah.701@gmail.com'" class="button">Hire Me</button>
+                    <button onclick="window.location.href='https://github.com/MirAb-77/MirAb-77.github.io/blob/main/CV.pdf'" class="button">Download Resume</button>
+                </div>
                 <blockquote class="mt-8 text-xl italic text-gray-200 border-l-4 border-gray-600 pl-6 max-w-4xl mx-auto bg-gray-900 p-4 rounded-lg shadow-md">
                     "Data is a canvas, and together we can paint a masterpiece of insights that drive success."
                     <cite class="block mt-4 text-lg font-semibold text-gray-300">— Abdullah Mir</cite>
@@ -98,6 +137,27 @@
             <p class="mt-4 text-gray-400">Copyright © 2024 Abdullah Mir. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const roleElement = document.getElementById('role');
+            const mlEngineerElement = document.getElementById('ml-engineer');
+            const helperElement = document.getElementById('helper');
+
+            setInterval(() => {
+                if (!roleElement.classList.contains('hidden')) {
+                    roleElement.classList.add('hidden');
+                    mlEngineerElement.classList.remove('hidden');
+                } else if (!mlEngineerElement.classList.contains('hidden')) {
+                    mlEngineerElement.classList.add('hidden');
+                    helperElement.classList.remove('hidden');
+                } else {
+                    helperElement.classList.add('hidden');
+                    roleElement.classList.remove('hidden');
+                }
+            }, 2500);
+        });
+    </script>
 </body>
 
 </html>

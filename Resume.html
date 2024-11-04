@@ -38,6 +38,43 @@
             color: #00ff7f;
             font-weight: bold;
         }
+
+        .specialization-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .specialization-card {
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .specialization-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .specialization-card .content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 0 0 10px 10px;
+        }
+
+        .specialization-card .content h3 {
+            margin-bottom: 10px;
+        }
+
+        .specialization-card .content p {
+            margin-bottom: 15px;
+        }
+
+        .specialization-card .content span {
+            display: inline-block;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -248,38 +285,53 @@
               <h2 class="text-4xl font-bold text-center section-title mb-4" style="color: white;">Specializations</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <a href="https://www.coursera.org/account/accomplishments/professional-cert/AHXDDVNX377J" class="specialization-card transition-transform transform hover:scale-105">
-                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
-                        <h3 class="text-2xl font-semibold text-green-500">IBM Data Science Professional Certificate</h3>
-                        <p class="text-gray-400 mt-2">Master data science fundamentals and analytics techniques.</p>
-                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    <div class="relative">
+                        <img src="https://i.imgur.com/ekvoZRs.jpeg" alt="IBM Data Science Professional Certificate" class="rounded-t-lg shadow-lg">
+                        <div class="content">
+                            <h3 class="text-2xl font-semibold text-green-500">IBM Data Science Professional Certificate</h3>
+                            <p class="text-gray-400 mt-2">Master data science fundamentals and analytics techniques.</p>
+                            <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                        </div>
                     </div>
                 </a>
                 <a href="https://www.coursera.org/account/accomplishments/professional-cert/8Q6TTQQEX8CS" class="specialization-card transition-transform transform hover:scale-105">
-                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
-                        <h3 class="text-2xl font-semibold text-green-500">Microsoft Power BI Professional Certificate</h3>
-                        <p class="text-gray-400 mt-2">Gain expertise in data visualization and analytics.</p>
-                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    <div class="relative">
+                        <img src="https://i.imgur.com/rgqZBTi.jpeg" alt="Microsoft Power BI Professional Certificate" class="rounded-t-lg shadow-lg">
+                        <div class="content">
+                            <h3 class="text-2xl font-semibold text-green-500">Microsoft Power BI Professional Certificate</h3>
+                            <p class="text-gray-400 mt-2">Gain expertise in data visualization and analytics.</p>
+                            <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                        </div>
                     </div>
                 </a>
                 <a href="https://www.coursera.org/account/accomplishments/professional-cert/4XRU0DFLRNSK" class="specialization-card transition-transform transform hover:scale-105">
-                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
-                        <h3 class="text-2xl font-semibold text-green-500">Google Data Analytics Professional Certificate</h3>
-                        <p class="text-gray-400 mt-2">Explore data-driven decision-making strategies.</p>
-                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    <div class="relative">
+                        <img src="https://i.imgur.com/c01cgW7.jpeg" alt="Google Data Analytics Professional Certificate" class="rounded-t-lg shadow-lg">
+                        <div class="content">
+                            <h3 class="text-2xl font-semibold text-green-500">Google Data Analytics Professional Certificate</h3>
+                            <p class="text-gray-400 mt-2">Explore data-driven decision-making strategies.</p>
+                            <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                        </div>
                     </div>
                 </a>
                 <a href="https://www.datacamp.com/portfolio/abdullahimran017" class="specialization-card transition-transform transform hover:scale-105">
-                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
-                        <h3 class="text-2xl font-semibold text-green-500">DataCamp Certified Professional Data Scientist</h3>
-                        <p class="text-gray-400 mt-2">Acquire essential skills for real-world data science projects.</p>
-                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    <div class="relative">
+                        <img src="https://i.imgur.com/yQTv52Z.jpeg" alt="DataCamp Certified Professional Data Scientist" class="rounded-t-lg shadow-lg">
+                        <div class="content">
+                            <h3 class="text-2xl font-semibold text-green-500">DataCamp Certified Professional Data Scientist</h3>
+                            <p class="text-gray-400 mt-2">Acquire essential skills for real-world data science projects.</p>
+                            <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                        </div>
                     </div>
                 </a>
                 <a href="https://www.coursera.org/account/accomplishments/professional-cert/HE0UF78E67BF" class="specialization-card transition-transform transform hover:scale-105">
-                    <div class="p-5 border border-gray-800 rounded-lg shadow-lg bg-gray-900 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1">
-                        <h3 class="text-2xl font-semibold text-green-500">Google Advanced Data Analytics Certificate</h3>
-                        <p class="text-gray-400 mt-2">Deepen your analytics skills for advanced insights.</p>
-                        <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                    <div class="relative">
+                        <img src="https://i.imgur.com/aLcvwV5.jpeg" alt="Google Advanced Data Analytics Certificate" class="rounded-t-lg shadow-lg">
+                        <div class="content">
+                            <h3 class="text-2xl font-semibold text-green-500">Google Advanced Data Analytics Certificate</h3>
+                            <p class="text-gray-400 mt-2">Deepen your analytics skills for advanced insights.</p>
+                            <span class="text-lg text-gray-300 mt-3 inline-block">Learn More &rarr;</span>
+                        </div>
                     </div>
                 </a>
             </div>
