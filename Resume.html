@@ -82,9 +82,9 @@
     <header class="bg-custom text-white py-4 shadow">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center justify-center mt-8">
-                <div class="text-2xl font-bold text-custom px-6 py-3 rounded-full border-2 border-green-500">
+                <div class="text-2xl font-bold text-custom px-6 py-3 rounded-full border-2 border-green-500 mr-4">
                     AIM
-                </div>
+                </div>            
             </div>
             <nav>
                 <ul class="flex space-x-6 text-xl">
@@ -101,7 +101,7 @@
 
     <main>
         <section class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4">Resume</h1>
+            <h1 class="text-5xl font-bold mb-4">Resume</h1>
             <p class="text-gray-400 italic text-xl">"Strive not to be a success, but rather to be of value." - Albert Einstein</p>
         </section>
         
@@ -397,16 +397,18 @@
 </style>
 
 <!-- Courses Section -->
-   <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-    <div>
-       <h2 class="text-4xl font-bold text-center section-title mb-4" style="color: white;">Courses</h2>
+<section class="mb-12">
+    <!-- Centered Heading for Courses Section -->
+    <div class="text-center mb-8">
+       <h2 class="text-4xl font-bold section-title" style="color: white;">Courses</h2>
+    </div>
 
+    <!-- Grid Layout for Course Containers -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        
         <!-- Data Science Courses Container -->
-<div class="course-container mb-6 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
-
-        <h3 class="text-lg font-bold highlight text-green-400">Data Science</h3>
-            
-            <!-- Coursera Courses -->
+        <div class="course-container mb-8 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
+            <h3 class="text-lg font-bold highlight text-green-400">Data Science</h3>
             <div class="mt-4">
                 <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
                     <li>Data Analysis with R Programming</li>
@@ -422,16 +424,14 @@
                     <li>End-to-End Machine Learning</li>
                     <li>Machine Learning for Business</li>
                     <li>Extreme Gradient Boosting with XGBoost</li>
-                    <li>Machine Learning for Time Series Data/li>
+                    <li>Machine Learning for Time Series Data</li>
                 </ul>
             </div>
         </div>
 
         <!-- Data Analysis Courses Container -->
-        <div class="course-container mb-6 p-6 border border-gray-900 rounded-lg shadow-lg bg-gray-900 text-white">
+        <div class="course-container mb-8 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
             <h3 class="text-lg font-bold highlight text-green-400">Data Analysis</h3>
-            
-            <!-- Coursera Courses -->
             <div class="mt-4">
                 <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
                     <li>Analyze Data to Answer Questions</li>
@@ -442,8 +442,6 @@
                     <li>Applied Data Science Capstone</li>
                 </ul>
             </div>
-
-            <!-- DataCamp Courses -->
             <div class="mt-4">
                 <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
                     <li>Data Manipulation with Pandas</li>
@@ -452,14 +450,10 @@
                 </ul>
             </div>
         </div>
-    </div>
-
-    <div>
 
         <!-- MLOps and Advanced Topics Container -->
-         <div class="course-container mb-6 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
+        <div class="course-container mb-8 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
             <h3 class="text-lg font-bold highlight text-green-400">MLOps and Advanced Topics</h3>
-            
             <div class="mt-4">
                 <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
                     <li>MLOps Concepts</li>
@@ -470,7 +464,7 @@
         </div>
 
         <!-- Project Management Courses Container -->
-         <div class="course-container mb-6 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
+        <div class="course-container mb-8 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
             <h3 class="text-lg font-bold highlight text-green-400">Project Management</h3>
             <div class="mt-4">
                 <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
@@ -480,9 +474,9 @@
             </div>
         </div>
 
-         <!-- Power BI Courses Container -->
-        <div class="course-container mb-6 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
-         <h3 class="text-lg font-bold highlight text-green-400">Power BI</h3>
+        <!-- Power BI Courses Container -->
+        <div class="course-container mb-8 p-6 border border-gray-800 rounded-lg shadow-lg bg-gray-900 text-white">
+            <h3 class="text-lg font-bold highlight text-green-400">Power BI</h3>
             <div class="mt-4">
                 <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
                     <li>Harnessing the Power of Data with Power BI - Microsoft</li>
@@ -491,8 +485,10 @@
                 </ul>
             </div>
         </div>
+
     </div>
 </section>
+
 
 <footer class="bg-black py-12 text-center">
     <h2 class="text-3xl font-bold">Abdullah Mir</h2>
